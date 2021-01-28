@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="modal" id="modal">
+    <button id="close">X</button>
+    <h3 id="result"></h3>
+  </div>
+  <header>
+    <h1>Крестики-нолики</h1>
+    <p>Простая игра в крестики-нолики.</p>
+  </header>
+  <section class="main">
+    <h2>Количество побед</h2>
+    <div class="score">
+      <div class="firstPlayer">
+        Первый игрок(X): <span id="playerX"></span>
+      </div>
+      <div class="secondPlayer">
+        Второй игрок(O): <span id="playerO"></span>
+      </div>
+    </div>
+    <p class="turn">Сейчас ход игрока: <span id="whatPlayer">X</span></p>
+  
+    <canvas id="canvas" width="600px" height="600px"></canvas>
+    <div class="btns">
+      <button id="newRound" class="btn1">Новый раунд</button>
+      <button id="deleteAll" class="btn2">Сброс</button>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <script src="script.js"></script>
+</body>
+</html>
